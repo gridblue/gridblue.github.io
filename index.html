@@ -333,57 +333,60 @@
         <span class="sec-line"></span>
       </div>
 
-      <!-- TEJUS: replace each project below with your real ones. Add demo/repo links. -->
       <div class="reveal">
+        <!-- Project 1 — LLM fine-tuning (DistilGPT2 / LoRA). TEJUS: add the repo URL once it's public. -->
         <article class="proj">
           <div class="proj-idx">01</div>
           <div>
+            <h3 class="proj-title">LLM Domain Adaptation — Full Fine-Tuning vs LoRA</h3>
+            <p class="proj-desc">A controlled study adapting DistilGPT2 to the formal register of two policy reports. I benchmarked baseline perplexity, then compared full fine-tuning against a low-rank LoRA adapter — the adapter recovered most of the domain shift while training just <b>0.18%</b> of the model's weights (147K vs 82M parameters), trading a little accuracy for a large drop in cost.</p>
+            <div class="proj-stack">
+              <span class="tag">PyTorch</span><span class="tag">Hugging Face</span><span class="tag">PEFT / LoRA</span><span class="tag">DistilGPT2</span>
+            </div>
+          </div>
+          <div class="proj-links">
+            <a href="#">Repo ↗</a><a href="#">Notebook ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 2 — YOLOv8 stain detection. Honest framing: detector, transfer from general-stain data. -->
+        <article class="proj">
+          <div class="proj-idx">02</div>
+          <div>
+            <h3 class="proj-title">Fabric Stain Detection (YOLOv8)</h3>
+            <p class="proj-desc">A YOLOv8 object detector for fabric-stain quality control, motivated by a railway-linen inspection use case. With in-domain data scarce, I bootstrapped the detector on a larger public fabric-stain corpus and built the full annotation-to-training pipeline myself — converting Supervisely JSON labels to YOLO format and handling the train/val split. Reached <b>mAP50 ≈ 0.85</b> on a 96-image validation set.</p>
+            <div class="proj-stack">
+              <span class="tag">YOLOv8</span><span class="tag">Ultralytics</span><span class="tag">OpenCV</span><span class="tag">Python</span>
+            </div>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/gridblue/railways-bedsheet-ai" target="_blank" rel="noopener">Repo ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 3 — Quantum ML research. TEJUS: fill in real details + links. -->
+        <article class="proj">
+          <div class="proj-idx">03</div>
+          <div>
             <h3 class="proj-title">Quantum Machine Learning Research</h3>
-            <p class="proj-desc">[Performed an abalation study of the quantum-classical algorithms to improve dynamic channel allocation of satelites.]</p>
+            <p class="proj-desc">[Describe your QML research at Deakin — the question you explored, the approach, and what you found or built.]</p>
             <div class="proj-stack">
               <span class="tag">PennyLane</span><span class="tag">Qiskit</span><span class="tag">Python</span>
             </div>
           </div>
           <div class="proj-links">
-            Code restricted due to active academic research
+            <a href="#">Repo ↗</a><a href="#">Write-up ↗</a>
           </div>
         </article>
 
-        <article class="proj">
-          <div class="proj-idx">02</div>
-          <div>
-            <h3 class="proj-title">Deep Learning Project — [Title]</h3>
-            <p class="proj-desc">[Your strongest DL build — e.g. a 3D CNN, GAN, or RL agent. One or two lines: the problem, your model, the outcome.]</p>
-            <div class="proj-stack">
-              <span class="tag">PyTorch</span><span class="tag">CNN</span><span class="tag">Python</span>
-            </div>
-          </div>
-          <div class="proj-links">
-            <a href="#">Repo ↗</a><a href="#">Demo ↗</a>
-          </div>
-        </article>
-
-        <article class="proj">
-          <div class="proj-idx">03</div>
-          <div>
-            <h3 class="proj-title">RAG / LLM Application — [Title]</h3>
-            <p class="proj-desc">[An end-to-end LLM or RAG project. Ideal candidate to deploy live — a working demo here is your strongest signal.]</p>
-            <div class="proj-stack">
-              <span class="tag">LLM</span><span class="tag">Vector DB</span><span class="tag">FastAPI</span>
-            </div>
-          </div>
-          <div class="proj-links">
-            <a href="#">Live demo ↗</a><a href="#">Repo ↗</a>
-          </div>
-        </article>
-
+        <!-- Project 4 — Data engineering. TEJUS: swap in a real pipeline project (e.g. the medallion / Box Hill build). -->
         <article class="proj">
           <div class="proj-idx">04</div>
           <div>
             <h3 class="proj-title">Data Pipeline — [Title]</h3>
-            <p class="proj-desc">[An ETL / data-engineering project showing how you move and shape data at scale.]</p>
+            <p class="proj-desc">[An ETL / data-engineering project showing how you move and shape data — e.g. the medallion-architecture build (Bronze/Silver/Gold) in PySpark.]</p>
             <div class="proj-stack">
-              <span class="tag">SQL</span><span class="tag">ETL</span><span class="tag">Cloud</span>
+              <span class="tag">PySpark</span><span class="tag">ETL</span><span class="tag">Delta / Parquet</span>
             </div>
           </div>
           <div class="proj-links">
